@@ -152,6 +152,7 @@ namespace Microsoft.NewProjectWizard
 
                     if (latestSdk == null)
                     {
+                        MessageBox.Show(Resources.WinSDKNotFound);
                         throw new WizardCancelledException(Resources.WinSDKNotFound);
                     }
 
@@ -163,6 +164,7 @@ namespace Microsoft.NewProjectWizard
 
                     if (latestPlatform == null)
                     {
+                        MessageBox.Show(Resources.WinSDKNotFound);
                         throw new WizardCancelledException(Resources.WinSDKNotFound);
                     }
 
