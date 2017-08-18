@@ -44,7 +44,7 @@ namespace GoogleTestAdapter.Tests.Common
             match.Success.Should().BeTrue();
             string binariesPath = match.Groups[1].Value;
             string debugOrRelease = match.Groups[2].Value;
-            testAdapterDir = Path.Combine(binariesPath, "GoogleTestAdapter", debugOrRelease, "Packaging.GTA");
+            testAdapterDir = Path.Combine(binariesPath, "GoogleTestAdapter", debugOrRelease, "Packaging.TAfGT");
             testSolutionFile = Path.Combine(binariesPath, @"..\..\SampleTests\SampleTests.sln");
         }
 
