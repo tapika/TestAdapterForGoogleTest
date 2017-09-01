@@ -177,7 +177,7 @@
     <Error Condition="!Exists('$(NuGetPackages)MicroBuild.Core.0.2.0\build\MicroBuild.Core.props')" Text="$([System.String]::Format('$(ErrorText)', '$(NuGetPackages)MicroBuild.Core.0.2.0\build\MicroBuild.Core.props'))" />
     <Error Condition="!Exists('$(NuGetPackages)MicroBuild.Core.0.2.0\build\MicroBuild.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(NuGetPackages)MicroBuild.Core.0.2.0\build\MicroBuild.Core.targets'))" />
   </Target>
-  <Target Name="GatherLocalizedOutputsForSigning" Condition="'$(LocalizationEnabled)' == 'true'"> 
+  <Target Name="GatherLocalizedOutputsForSigning" Condition="'$(LocalizationEnabled)' == 'true' AND '$(RealSign)' == 'True'"> 
     <ItemGroup> 
       <FilesToSign Include="$(OutDir)\localize\**\$(AssemblyName).resources.dll"> 
         <Authenticode>Microsoft</Authenticode> 

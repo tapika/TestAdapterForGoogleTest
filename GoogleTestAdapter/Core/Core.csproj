@@ -159,7 +159,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Target Name="GatherLocalizedOutputsForSigning" Condition="'$(LocalizationEnabled)' == 'true'"> 
+  <Target Name="GatherLocalizedOutputsForSigning" Condition="'$(LocalizationEnabled)' == 'true' AND '$(RealSign)' == 'True'"> 
     <ItemGroup> 
       <FilesToSign Include="$(OutDir)\localize\**\$(AssemblyName).resources.dll"> 
         <Authenticode>Microsoft</Authenticode> 
