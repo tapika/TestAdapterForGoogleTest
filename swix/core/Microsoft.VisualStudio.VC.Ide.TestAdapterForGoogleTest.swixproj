@@ -39,4 +39,5 @@
   <!-- MicroBuild plugin fails if GetNativeManifest is not found for some reason -->
   <Target Name="GetNativeManifest" />
   <Import Project="$(NuGetPackages)MicroBuild.Core.0.2.0\build\MicroBuild.Core.targets" />
+  <Import Project="$(NuGetPackages)Nerdbank.GitVersioning.1.4.30\build\dotnet\Nerdbank.GitVersioning.targets" />
 </Project>
