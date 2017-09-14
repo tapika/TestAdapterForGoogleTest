@@ -11,10 +11,6 @@
      support finding the dependency for MinShell outside of VS -->
     <ValidateManifest>false</ValidateManifest>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="Microsoft.VisualStudio.VC.Ide.TestAdapterForGoogleTest.swixproj" />
-  </ItemGroup>
   
   <ItemGroup>
     <MergeManifest Include="$(OutputPath)\Microsoft.VisualStudio.VC.Ide.TestAdapterForGoogleTest.json" />
