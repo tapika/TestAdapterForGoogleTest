@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(NuGetPackages)MicroBuild.Core.0.2.0\build\MicroBuild.Core.props" />
-
   <PropertyGroup>
     <OutputArchitecture>neutral</OutputArchitecture>
     <OutputLocalized>false</OutputLocalized>
@@ -14,6 +12,7 @@
   </PropertyGroup>
 
   <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), Common.props))\Common.props" />
+  <Import Project="$(NuGetPackages)MicroBuild.Core.0.2.0\build\MicroBuild.Core.props" />
 
   <PropertyGroup>
     <VsixOutDir>$(OutputPath)..\Packaging.TAfGT</VsixOutDir>
