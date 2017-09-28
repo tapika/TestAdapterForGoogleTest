@@ -2,8 +2,8 @@ Param([parameter(Mandatory=$true)] [string] $version)
 
 $common_assembly_info = "Common\Properties\AssemblyInfo.cs"
 
-$common_dynamic_gta_assembly_info = "Common.Dynamic.GTA\Properties\AssemblyInfo"
-$common_dynamic_tafgt_assembly_info = "Common.Dynamic.TAfGT\Properties\AssemblyInfo"
+$common_dynamic_gta_assembly_info = "Common.Dynamic.GTA\Properties\AssemblyInfo.cs"
+$common_dynamic_tafgt_assembly_info = "Common.Dynamic.TAfGT\Properties\AssemblyInfo.cs"
 
 $core_assembly_info = "Core\Properties\AssemblyInfo.cs"
 $coretests_assembly_info = "Core.Tests\Properties\AssemblyInfo.cs"
