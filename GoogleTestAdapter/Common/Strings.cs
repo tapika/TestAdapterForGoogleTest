@@ -16,7 +16,7 @@ namespace GoogleTestAdapter.Common
             var path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "GoogleTestAdapter.Common.Dynamic.dll");
             var asm = Assembly.LoadFile(path);
             var type = asm.GetType("GoogleTestAdapter.Common.Strings");
-            _strings = (IStrings)Activator.CreateInstance(type);
+            _strings = (IStrings)Activator.CreateInstance(type, null, null, null, System.Globalization.CultureInfo.CurrentCulture);
         }
 
         public static IStrings Instance => _strings;
