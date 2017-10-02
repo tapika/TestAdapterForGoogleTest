@@ -62,7 +62,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Strings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />
