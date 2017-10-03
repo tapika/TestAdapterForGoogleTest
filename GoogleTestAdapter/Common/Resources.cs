@@ -31,7 +31,7 @@
                     // Get the path to GoogleTestAdapter.Common.Dynamic.dll where the resources are defined
                     var path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "GoogleTestAdapter.Common.Dynamic.dll");
                     var asm = Assembly.LoadFile(path);
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GoogleTestAdapter.Common.Resources", asm);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("GoogleTestAdapter.Common.Dynamic.Resources", asm);
                     resourceMan = temp;
                 }
                 return resourceMan;
