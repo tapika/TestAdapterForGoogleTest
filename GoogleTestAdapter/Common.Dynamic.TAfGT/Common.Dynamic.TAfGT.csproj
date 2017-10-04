@@ -9,7 +9,7 @@
     <ProjectGuid>{9041BDED-FA1B-4C17-B7EA-7B750C470C23}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoogleTestAdapter.Common</RootNamespace>
+    <RootNamespace>GoogleTestAdapter.Common.Dynamic</RootNamespace>
     <AssemblyName>GoogleTestAdapter.Common.Dynamic</AssemblyName>
     <TargetFrameworkVersion>$(FlavoredTargetFrameworkVersion)</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
