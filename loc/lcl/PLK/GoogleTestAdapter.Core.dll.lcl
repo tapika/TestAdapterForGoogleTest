@@ -365,7 +365,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Google Test indicator file found for executable {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Znaleziono plik wskaźnika biblioteki Google Test dla pliku wykonywalnego {0}]]></Val>
+            <Val><![CDATA[Znaleziono plik wskaźnika platformy Google Test dla pliku wykonywalnego {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -374,7 +374,7 @@
         <Str Cat="Text">
           <Val><![CDATA[No Google Test indicator file found for executable {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Nie znaleziono pliku wskaźnika biblioteki Google Test dla pliku wykonywalnego {0}]]></Val>
+            <Val><![CDATA[Nie znaleziono pliku wskaźnika platformy Google Test dla pliku wykonywalnego {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -518,7 +518,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Additional parameters for Google Test executable. Placeholders:]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Dodatkowe parametry dla pliku wykonywalnego biblioteki Google Test. Symbole zastępcze:]]></Val>
+            <Val><![CDATA[Dodatkowe parametry dla pliku wykonywalnego platformy Google Test. Symbole zastępcze:]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -527,7 +527,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Plik wsadowy konfiguracji testów]]></Val>
+            <Val><![CDATA[Plik wsadowy konfiguracji testu]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -545,7 +545,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Plik wsadowy usuwania testów]]></Val>
+            <Val><![CDATA[Plik wsadowy usuwania konfiguracji testu]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -572,7 +572,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If enabled, a potentially attached debugger will catch assertion failures and automatically drop into interactive mode.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Jeśli ta opcja jest włączona, potencjalnie dołączony debuger będzie przechwytywać błędy potwierdzenia i automatycznie przechodzić do trybu interaktywnego.]D;]A;Opcja biblioteki Google Test: {0}]]></Val>
+            <Val><![CDATA[Jeśli ta opcja jest włączona, potencjalnie dołączony debuger będzie przechwytywać błędy potwierdzenia i automatycznie przechodzić do trybu interaktywnego.]D;]A;Opcja platformy Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -590,7 +590,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Google Test catches exceptions by default; the according test fails and test execution continues. Choosing false lets exceptions pass through, allowing the debugger to catch them.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Biblioteka Google Test domyślnie przechwytuje wyjątki, odpowiedni test kończy się niepowodzeniem i wykonywanie testów jest kontynuowane. Wybranie ustawienia false pozwala przepuszczać wyjątki, umożliwiając debugerowi ich przechwycenie.]D;]A;Opcja biblioteki Google Test: {0}]]></Val>
+            <Val><![CDATA[Platforma Google Test domyślnie przechwytuje wyjątki, odpowiedni test kończy się niepowodzeniem i wykonywanie testów jest kontynuowane. Wybranie ustawienia false pozwala przepuszczać wyjątki, umożliwiając debugerowi ich przechwycenie.]D;]A;Opcja platformy Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -644,7 +644,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If true, running test executables are actively terminated if the test execution is canceled. Note that terminating a test process might have all kinds of side effects; in particular, Google Test will not be able to perform any shutdown tasks.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[W przypadku wartości true uruchomione pliki wykonywalne testów będą aktywnie zakańczane, jeśli wykonanie testu zostanie anulowane. Należy zauważyć, że zakończenie procesu testu może mieć wszelkiego rodzaju skutki uboczne; w szczególności biblioteka Google Test nie będzie mogła wykonać żadnych zadań zamknięcia.]]></Val>
+            <Val><![CDATA[W przypadku wartości true uruchomione pliki wykonywalne testów będą aktywnie zakańczane, jeśli wykonanie testu zostanie anulowane. Należy zauważyć, że zakończenie procesu testu może mieć wszelkiego rodzaju skutki uboczne; w szczególności platforma Google Test nie będzie mogła wykonać żadnych zadań zamknięcia.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -680,7 +680,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Tests will be run for the selected number of times (-1: infinite).]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Testy zostaną uruchomione wybraną liczbę razy (-1: nieskończona).]D;]A;Opcja biblioteki Google Test: {0}]]></Val>
+            <Val><![CDATA[Testy zostaną uruchomione wybraną liczbę razy (-1: nieskończona).]D;]A;Opcja platformy Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -734,7 +734,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Print the output of the Google Test executable(s) to the Tests Output window.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Wpisywanie danych wyjściowych plików wykonywalnych biblioteki Google Test do okna danych wyjściowych testów.]]></Val>
+            <Val><![CDATA[Wpisywanie danych wyjściowych plików wykonywalnych platformy Google Test do okna danych wyjściowych testów.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -752,7 +752,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If true, all (selected) tests will be run, even if they have been disabled.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Jeśli ta opcja ma wartość true, wszystkie testy (zaznaczone) zostaną uruchomione, nawet jeśli zostały wyłączone.]D;]A;Opcja biblioteki Google Test: {0}]]></Val>
+            <Val><![CDATA[Jeśli ta opcja ma wartość true, wszystkie testy (zaznaczone) zostaną uruchomione, nawet jeśli zostały wyłączone.]D;]A;Opcja platformy Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -788,7 +788,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If true, tests will be executed in random order. Note that a true randomized order is only given when executing all tests in non-parallel fashion. Otherwise, the test excutables will most likely be executed more than once - random order is than restricted to the according executions.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[W przypadku wartości true testy będą wykonywane w kolejności losowej. Należy zauważyć, że prawdziwie losowa kolejność jest podawana tylko podczas wykonywania wszystkich testów w sposób nierównoległy. W przeciwnym razie pliki wykonywalne testów najprawdopodobniej będą wykonywane więcej niż jeden raz — kolejność losowa jest wtedy ograniczona zgodnie z wykonaniami.]D;]A;Opcja biblioteki Google Test: {0}]]></Val>
+            <Val><![CDATA[W przypadku wartości true testy będą wykonywane w kolejności losowej. Należy zauważyć, że prawdziwie losowa kolejność jest podawana tylko podczas wykonywania wszystkich testów w sposób nierównoległy. W przeciwnym razie pliki wykonywalne testów najprawdopodobniej będą wykonywane więcej niż jeden raz — kolejność losowa jest wtedy ograniczona zgodnie z wykonaniami.]D;]A;Opcja platformy Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -806,7 +806,7 @@
         <Str Cat="Text">
           <Val><![CDATA[0: Seed is computed from system time, 1<=n<={0}: The given seed is used. See note of option '{1}'.]D;]A;Google Test option: {2}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[0: inicjator jest obliczany na podstawie czasu systemowego, 1<= n<={0}: używany jest dany inicjator. Patrz uwaga dotycząca opcji „{1}”.]D;]A;Opcja biblioteki Google Test: {2}]]></Val>
+            <Val><![CDATA[0: inicjator jest obliczany na podstawie czasu systemowego, 1<= n<={0}: używany jest dany inicjator. Patrz uwaga dotycząca opcji „{1}”.]D;]A;Opcja platformy Google Test: {2}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -824,7 +824,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If non-empty, this regex will be used to discover the Google Test executables containing your tests.]D;]A;Default regex: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Jeśli nie jest puste, to wyrażenie regularne będzie używane do odnajdywania plików wykonywalnych biblioteki Google Test zawierających Twoje testy.]D;]A;Domyślne wyrażenie regularne: {0}]]></Val>
+            <Val><![CDATA[Jeśli nie jest puste, to wyrażenie regularne będzie używane do odnajdywania plików wykonywalnych platformy Google Test zawierających Twoje testy.]D;]A;Domyślne wyrażenie regularne: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -833,7 +833,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test discovery timeout in s]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Limit czasu odnajdywania testu w s]]></Val>
+            <Val><![CDATA[Limit czasu odnajdywania testów w s]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -842,7 +842,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Number of seconds after which test discovery will be assumed to have failed. 0: Infinite timeout]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Liczba sekund, po upływie których odnajdywanie testu będzie traktowane jako zakończone niepowodzeniem. 0: nieskończony limit czasu]]></Val>
+            <Val><![CDATA[Liczba sekund, po upływie których odnajdywanie testów będzie traktowane jako zakończone niepowodzeniem. 0: nieskończony limit czasu]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -860,7 +860,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test names produced by Google Test might contain the character '/', which makes Visual Studio cut the name after the '/' if the Test Explorer window is not wide enough. This option's value, if non-empty, will replace the '/' character to avoid that behavior. Note that '\', ' ', '|', and '-' produce the same behavior ('.', '_', ':', and '::' are known to work). Note also that traits regexes are evaluated against the tests' display names (and must thus be consistent with this option).]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Nazwy testów tworzone przez bibliotekę Google Test mogą zawierać znak „/”, co sprawia, że Visual Studio obcina nazwę po znaku „/”, jeśli okno Eksploratora testów nie jest dostatecznie szerokie. Wartość tej opcji, jeśli nie jest pusta, zastąpi znak „/”, aby uniknąć tego zachowania. Należy zauważyć, że znaki „\”, „ ”, „|” i „-” powodują takie samo zachowanie (wiadomo, że znaki „.”, „_”, „:” i „::” działają). Należy także pamiętać, że wartości wyrażeń regularnych cech są obliczane względem nazw wyświetlanych testów (a więc muszą być zgodne z tą opcją).]]></Val>
+            <Val><![CDATA[Nazwy testów tworzone przez platformę Google Test mogą zawierać znak „/”, co sprawia, że program Visual Studio obcina nazwę po znaku „/”, jeśli okno Eksploratora testów nie jest dostatecznie szerokie. Wartość tej opcji, jeśli nie jest pusta, zastąpi znak „/”, aby uniknąć tego zachowania. Należy zauważyć, że znaki „\”, „ ”, „|” i „-” powodują takie samo zachowanie (wiadomo, że znaki „.”, „_”, „:” i „::” działają). Należy także pamiętać, że wartości wyrażeń regularnych cech są obliczane względem nazw wyświetlanych testów (a więc muszą być zgodne z tą opcją).]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1211,7 +1211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Plik wsadowy instalacji testu]]></Val>
+            <Val><![CDATA[Plik wsadowy konfiguracji testu]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Plik wsadowy usuwania testu]]></Val>
+            <Val><![CDATA[Plik wsadowy usuwania konfiguracji testu]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
