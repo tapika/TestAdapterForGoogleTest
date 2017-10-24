@@ -527,7 +527,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테스트 설치 배치 파일]]></Val>
+            <Val><![CDATA[테스트 설정 배치 파일]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -545,7 +545,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테스트 종료 배치 파일]]></Val>
+            <Val><![CDATA[테스트 해제 배치 파일]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1211,7 +1211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테스트 설정 일괄 처리 파일]]></Val>
+            <Val><![CDATA[테스트 설정 배치 파일]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테스트 종료 일괄 처리 파일]]></Val>
+            <Val><![CDATA[테스트 해제 배치 파일]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1256,7 +1256,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Using splitter based on test durations]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테스트 기간을 기준으로 분할자 사용]]></Val>
+            <Val><![CDATA[테스트 기간을 기준으로 분할기 사용]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1265,7 +1265,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Using splitter based on number of tests]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[테스트 수를 기준으로 분할자 사용]]></Val>
+            <Val><![CDATA[테스트 수를 기준으로 분할기 사용]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

@@ -518,7 +518,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Additional parameters for Google Test executable. Placeholders:]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Google 測試可執行檔的其他參數。預留位置:]]></Val>
+            <Val><![CDATA[Google Test 可執行檔的其他參數。預留位置:]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -527,7 +527,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[測試安裝批次檔]]></Val>
+            <Val><![CDATA[測試設定批次檔]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -590,7 +590,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Google Test catches exceptions by default; the according test fails and test execution continues. Choosing false lets exceptions pass through, allowing the debugger to catch them.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[根據預設值; Google 測試會攔截的例外狀況according 的測試失敗，且會繼續測試執行。選擇，則為 false 可讓例外狀況通過，讓偵錯工具攔截。]D;]A;Google 測試選項: {0}]]></Val>
+            <Val><![CDATA[根據預設值; Google Test 會攔截的例外狀況according 的測試失敗，且會繼續測試執行。選擇，則為 false 可讓例外狀況通過，讓偵錯工具攔截。]D;]A;Google 測試選項: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1211,7 +1211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[測試安裝批次檔]]></Val>
+            <Val><![CDATA[測試設定批次檔]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

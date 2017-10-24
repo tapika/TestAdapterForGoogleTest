@@ -527,7 +527,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[测试安装批处理文件]]></Val>
+            <Val><![CDATA[测试设置批处理文件]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -545,7 +545,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[测试拆卸批处理文件]]></Val>
+            <Val><![CDATA[测试清理批处理文件]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -833,7 +833,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test discovery timeout in s]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[测试查询超时(秒)]]></Val>
+            <Val><![CDATA[测试发现超时(秒)]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[测试拆卸批处理文件]]></Val>
+            <Val><![CDATA[测试清理批处理文件]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
