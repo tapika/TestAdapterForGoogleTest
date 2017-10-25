@@ -76,7 +76,7 @@
           <Str Cat="Menu Item">
             <Val><![CDATA[Test Adapter for Google Test]]></Val>
             <Tgt Cat="Menu Item" Stat="Loc" Orig="New">
-              <Val><![CDATA[Адаптер теста для Google Test]]></Val>
+              <Val><![CDATA[Адаптер тестов для Google Test]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" Expand="true" />
@@ -89,7 +89,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test Adapter for Google Test]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Адаптер теста для Google Test]]></Val>
+            <Val><![CDATA[Адаптер тестов для Google Test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -144,7 +144,7 @@
       <Str Cat="Text">
         <Val><![CDATA[Visual Studio options integration of the Test Adapter for Google Test.]]></Val>
         <Tgt Cat="Text" Stat="Loc" Orig="New">
-          <Val><![CDATA[Параметры интеграции адаптера теста для Google Test в Visual Studio]]></Val>
+          <Val><![CDATA[Параметры интеграции адаптера тестов для Google Test в Visual Studio]]></Val>
         </Tgt>
       </Str>
       <Disp Icon="Str" />
