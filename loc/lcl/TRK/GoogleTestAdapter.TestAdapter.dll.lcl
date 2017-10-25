@@ -194,7 +194,7 @@
         <Str Cat="Text">
           <Val><![CDATA[test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Test bulma]]></Val>
+            <Val><![CDATA[test bulma]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

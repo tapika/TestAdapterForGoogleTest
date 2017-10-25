@@ -680,7 +680,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Tests will be run for the selected number of times (-1: infinite).]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Spuštění testů se zopakuje tolikrát, kolikrát se určí (-1: neomezeně).]D;]A;Možnost Google Test: {0}]]></Val>
+            <Val><![CDATA[Spuštění testů se zopakuje tolikrát, kolikrát se určí (-1: neomezeně).]D;]A;Možnost Google Testu: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1211,7 +1211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Dávkový soubor nastavení testů]]></Val>
+            <Val><![CDATA[Dávkový soubor nastavení testu]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Dávkový soubor rozboru testů]]></Val>
+            <Val><![CDATA[Dávkový soubor rozboru testu]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
