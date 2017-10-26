@@ -527,7 +527,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テストの setup バッチ ファイル]]></Val>
+            <Val><![CDATA[テスト セットアップ バッチ ファイル]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -545,7 +545,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テストの teardown バッチ ファイル]]></Val>
+            <Val><![CDATA[テスト ティアダウン バッチ ファイル]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -815,7 +815,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Regex for test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テスト検索の正規表現]]></Val>
+            <Val><![CDATA[テスト検出の正規表現]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -896,7 +896,7 @@
         <Str Cat="Text">
           <Val><![CDATA[After test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テスト後探索]]></Val>
+            <Val><![CDATA[テスト後検出]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -905,7 +905,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Before test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テスト前探索]]></Val>
+            <Val><![CDATA[テスト前検出]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1184,7 +1184,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test discovery was cancelled after {0} s for executable {1}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[実行可能ファイル {1} のテストの検出が {0} 秒後に取り消されました]]></Val>
+            <Val><![CDATA[実行可能ファイル {1} のテスト検出が {0} 秒後に取り消されました]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1211,7 +1211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テストの setup バッチ ファイル]]></Val>
+            <Val><![CDATA[テスト セットアップ バッチ ファイル]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テストの teardown バッチ ファイル]]></Val>
+            <Val><![CDATA[テスト ティアダウン バッチ ファイル]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1308,7 +1308,7 @@
       <Str Cat="Text">
         <Val><![CDATA[Adds support for the C++ unit testing framework Google Tests]]></Val>
         <Tgt Cat="Text" Stat="Loc" Orig="New">
-          <Val><![CDATA[C++ 単体テスト フレームワークの Google Tests 向けのサポートを追加します]]></Val>
+          <Val><![CDATA[C++ 単体テスト フレームワークの Google Test 向けのサポートを追加します]]></Val>
         </Tgt>
       </Str>
       <Disp Icon="Str" />

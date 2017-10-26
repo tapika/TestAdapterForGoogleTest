@@ -194,7 +194,7 @@
         <Str Cat="Text">
           <Val><![CDATA[test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テストの検出]]></Val>
+            <Val><![CDATA[テスト検出]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -203,7 +203,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test discovery completed, overall duration: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テストの検出が完了しました。全体の期間: {0}]]></Val>
+            <Val><![CDATA[テスト検出が完了しました。全体の期間: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
