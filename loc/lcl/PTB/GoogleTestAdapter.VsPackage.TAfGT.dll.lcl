@@ -76,7 +76,7 @@
           <Str Cat="Menu Item">
             <Val><![CDATA[Test Adapter for Google Test]]></Val>
             <Tgt Cat="Menu Item" Stat="Loc" Orig="New">
-              <Val><![CDATA[Adaptador de Teste para o Google Test]]></Val>
+              <Val><![CDATA[Adaptador de Teste para Google Test]]></Val>
             </Tgt>
           </Str>
           <Disp Icon="Str" Expand="true" />
@@ -89,7 +89,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test Adapter for Google Test]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Adaptador de Teste para o Google Test]]></Val>
+            <Val><![CDATA[Adaptador de Teste para Google Test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -125,7 +125,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Google Test]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Teste do Google]]></Val>
+            <Val><![CDATA[Google Test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

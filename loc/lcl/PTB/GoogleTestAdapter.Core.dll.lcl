@@ -518,7 +518,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Additional parameters for Google Test executable. Placeholders:]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Parâmetros adicionais para o executável do Teste do Google. Espaços reservados:]]></Val>
+            <Val><![CDATA[Parâmetros adicionais para o executável do Google Test. Espaços reservados:]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -527,7 +527,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Arquivo em lotes de configuração do teste]]></Val>
+            <Val><![CDATA[Arquivo em lotes para configuração do teste]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -545,7 +545,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Arquivo em lotes de desmontagem de teste]]></Val>
+            <Val><![CDATA[Arquivo em lotes para desinstalação do teste]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -572,7 +572,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If enabled, a potentially attached debugger will catch assertion failures and automatically drop into interactive mode.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Se habilitado, um depurador potencialmente anexado detectará falhas de declaração e cairá automaticamente no modo interativo.]D;]A;Opção do Teste do Google: {0}]]></Val>
+            <Val><![CDATA[Se habilitado, um depurador potencialmente anexado detectará falhas de declaração e cairá automaticamente no modo interativo.]D;]A;Opção do Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -590,7 +590,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Google Test catches exceptions by default; the according test fails and test execution continues. Choosing false lets exceptions pass through, allowing the debugger to catch them.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[O Teste do Google detecta exceções por padrão; o teste de acordo falha e a execução do teste continua. Optar por falso permite que as exceções passem, permitindo que o depurador detecte-as.]D;]A;Opção do Teste do Google: {0}]]></Val>
+            <Val><![CDATA[O Google Test detecta exceções por padrão; o teste de acordo falha e a execução do teste continua. Optar por falso permite que as exceções passem, permitindo que o depurador detecte-as.]D;]A;Opção do Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -644,7 +644,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If true, running test executables are actively terminated if the test execution is canceled. Note that terminating a test process might have all kinds of side effects; in particular, Google Test will not be able to perform any shutdown tasks.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Se verdadeiro, os executáveis de teste em execução serão ativamente terminados se a execução do teste for cancelada. Observe que terminar um processo de teste poderá causar todos os tipos de efeitos colaterais; em particular, o Teste do Google não poderá executar tarefas de desligamento.]]></Val>
+            <Val><![CDATA[Se verdadeiro, os executáveis de teste em execução serão ativamente terminados se a execução do teste for cancelada. Observe que terminar um processo de teste poderá causar todos os tipos de efeitos colaterais; em particular, o Google Test não poderá executar tarefas de desligamento.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -680,7 +680,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Tests will be run for the selected number of times (-1: infinite).]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Os testes serão executados para o número selecionado de vezes (-1: infinito).]D;]A;Opção do Teste do Google: {0}]]></Val>
+            <Val><![CDATA[Os testes serão executados para o número selecionado de vezes (-1: infinito).]D;]A;Opção do Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -734,7 +734,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Print the output of the Google Test executable(s) to the Tests Output window.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Imprima a saída dos executáveis do Teste do Google para a janela de Saída de Testes.]]></Val>
+            <Val><![CDATA[Imprima a saída dos executáveis do Google Test para a janela de Saída de Testes.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -752,7 +752,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If true, all (selected) tests will be run, even if they have been disabled.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Se verdadeiro, todos os testes (selecionados) serão executados, mesmo se eles estiverem desabilitados.]D;]A;Opção do Teste do Google: {0}]]></Val>
+            <Val><![CDATA[Se verdadeiro, todos os testes (selecionados) serão executados, mesmo se eles estiverem desabilitados.]D;]A;Opção do Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -788,7 +788,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If true, tests will be executed in random order. Note that a true randomized order is only given when executing all tests in non-parallel fashion. Otherwise, the test excutables will most likely be executed more than once - random order is than restricted to the according executions.]D;]A;Google Test option: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Se verdadeiro, os testes serão executadas em ordem aleatória. Observe que uma ordem aleatória verdadeira é dada apenas ao executar todos os testes de forma não paralela. Caso contrário, os executáveis de teste provavelmente serão executados mais de uma vez – a ordem aleatória é restrita às execuções de acordo.]D;]A;Opção do Teste do Google: {0}]]></Val>
+            <Val><![CDATA[Se verdadeiro, os testes serão executadas em ordem aleatória. Observe que uma ordem aleatória verdadeira é dada apenas ao executar todos os testes de forma não paralela. Caso contrário, os executáveis de teste provavelmente serão executados mais de uma vez – a ordem aleatória é restrita às execuções de acordo.]D;]A;Opção do Google Test: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -806,7 +806,7 @@
         <Str Cat="Text">
           <Val><![CDATA[0: Seed is computed from system time, 1<=n<={0}: The given seed is used. See note of option '{1}'.]D;]A;Google Test option: {2}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[0: a semente é computada da hora do sistema, 1<=n<={0}: a semente determinada é usada. Consulte a observação da opção '{1}'.]D;]A;Opção do Teste do Google: {2}]]></Val>
+            <Val><![CDATA[0: a semente é computada da hora do sistema, 1<=n<={0}: a semente determinada é usada. Consulte a observação da opção '{1}'.]D;]A;Opção do Google Test: {2}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -815,7 +815,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Regex for test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Regex para a descoberta de testes]]></Val>
+            <Val><![CDATA[Regex para a detecção de testes]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -824,7 +824,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If non-empty, this regex will be used to discover the Google Test executables containing your tests.]D;]A;Default regex: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Se não vazia, essa regex será usada para descobrir os executáveis do Teste do Google contendo seus testes.]D;]A;Regex padrão: {0}]]></Val>
+            <Val><![CDATA[Se não vazia, essa regex será usada para descobrir os executáveis do Google Test contendo seus testes.]D;]A;Regex padrão: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -833,7 +833,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test discovery timeout in s]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tempo limite da descoberta de testes em s]]></Val>
+            <Val><![CDATA[Tempo limite da detecção de testes em s]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -842,7 +842,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Number of seconds after which test discovery will be assumed to have failed. 0: Infinite timeout]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Número de segundos após o qual a descoberta de testes será considerada falha. 0: tempo limite infinito]]></Val>
+            <Val><![CDATA[Número de segundos após o qual a detecção de testes será considerada falha. 0: tempo limite infinito]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -860,7 +860,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test names produced by Google Test might contain the character '/', which makes Visual Studio cut the name after the '/' if the Test Explorer window is not wide enough. This option's value, if non-empty, will replace the '/' character to avoid that behavior. Note that '\', ' ', '|', and '-' produce the same behavior ('.', '_', ':', and '::' are known to work). Note also that traits regexes are evaluated against the tests' display names (and must thus be consistent with this option).]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Nomes de teste produzidos pelo Teste do Google podem conter o caractere '/', que faz com que o Visual Studio recorte o nome após o '/' se a janela do Gerenciador de Testes não for larga o suficiente. Esse valor da opção, se não vazio, substituirá o caractere '/' para evitar esse comportamento. Observe que ' \ ',' ', ' |' e '-' produzem o mesmo comportamento ('. ', '_', ':' e ':: ' funcionam). Observe também que as regexes das características são avaliadas em relação aos nomes de exibição dos testes (e, portanto, devem ser consistentes com essa opção).]]></Val>
+            <Val><![CDATA[Nomes de teste produzidos pelo Google Test podem conter o caractere '/', que faz com que o Visual Studio recorte o nome após o '/' se a janela do Gerenciador de Testes não for larga o suficiente. Esse valor da opção, se não vazio, substituirá o caractere '/' para evitar esse comportamento. Observe que ' \ ',' ', ' |' e '-' produzem o mesmo comportamento ('. ', '_', ':' e ':: ' funcionam). Observe também que as regexes das características são avaliadas em relação aos nomes de exibição dos testes (e, portanto, devem ser consistentes com essa opção).]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -896,7 +896,7 @@
         <Str Cat="Text">
           <Val><![CDATA[After test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Após a descoberta de testes]]></Val>
+            <Val><![CDATA[Após a detecção de testes]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -905,7 +905,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Before test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Antes da descoberta de testes]]></Val>
+            <Val><![CDATA[Antes da detecção de testes]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1184,7 +1184,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test discovery was cancelled after {0} s for executable {1}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[A descoberta de teste foi cancelada após {0} s para o executável {1}]]></Val>
+            <Val><![CDATA[A detecção de testes foi cancelada após {0} s para o executável {1}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1211,7 +1211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Arquivo do lote de configuração do teste]]></Val>
+            <Val><![CDATA[Arquivo em lotes para configuração do teste]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Arquivo do lote de desmontagem do teste]]></Val>
+            <Val><![CDATA[Arquivo em lotes para desinstalação do teste]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1308,7 +1308,7 @@
       <Str Cat="Text">
         <Val><![CDATA[Adds support for the C++ unit testing framework Google Tests]]></Val>
         <Tgt Cat="Text" Stat="Loc" Orig="New">
-          <Val><![CDATA[Adiciona suporte para os Testes do Google da estrutura de testes de unidade de C++]]></Val>
+          <Val><![CDATA[Adiciona suporte para Google Tests da estrutura de testes de unidade de C++]]></Val>
         </Tgt>
       </Str>
       <Disp Icon="Str" />

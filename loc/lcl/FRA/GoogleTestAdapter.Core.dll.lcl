@@ -527,7 +527,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Fichier de commandes de préparation des tests]]></Val>
+            <Val><![CDATA[Fichier de commandes d'initialisation (tearDown) de test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -545,7 +545,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Fichier de commandes de nettoyage des tests]]></Val>
+            <Val><![CDATA[Fichier de commandes de désactivation (tearDown) de test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1211,7 +1211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Fichier de commandes de préparation des tests]]></Val>
+            <Val><![CDATA[Fichier de commandes d'initialisation (tearDown) de test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Fichier de commandes de nettoyage des tests]]></Val>
+            <Val><![CDATA[Fichier de commandes de désactivation (tearDown) de test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
