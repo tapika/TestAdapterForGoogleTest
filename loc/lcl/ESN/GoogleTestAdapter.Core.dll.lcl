@@ -815,7 +815,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Regex for test discovery]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Regex para la detección de la prueba]]></Val>
+            <Val><![CDATA[Regex para la detección de pruebas]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -833,7 +833,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test discovery timeout in s]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Tiempo de expiración para la detección de la prueba en s]]></Val>
+            <Val><![CDATA[Tiempo de espera para la detección de pruebas en s]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -842,7 +842,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Number of seconds after which test discovery will be assumed to have failed. 0: Infinite timeout]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Número de segundos para que se suponga que la detección de la prueba no se ha completado correctamente. 0: tiempo de expiración infinito]]></Val>
+            <Val><![CDATA[Número de segundos para que se suponga que la detección de pruebas no se ha realizado correctamente. 0: tiempo de espera infinito]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1211,7 +1211,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test setup batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Archivo por lotes de instalación de pruebas]]></Val>
+            <Val><![CDATA[Archivo por lotes de configuración de la prueba]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Archivo por lotes de desmontaje de pruebas]]></Val>
+            <Val><![CDATA[Archivo por lotes de desmontaje de la prueba]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
