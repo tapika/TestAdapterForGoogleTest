@@ -14,7 +14,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test Adapter for Google Test]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Adaptador de Teste para o Google Test]]></Val>
+            <Val><![CDATA[Adaptador de Teste para Google Test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -23,7 +23,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test Adapter for Google Test: Test discovery starting...]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Adaptador de Teste para o Google Test: iniciando a descoberta de teste...]]></Val>
+            <Val><![CDATA[Adaptador de Teste para Google Test: iniciando a detecção de testes...]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -32,7 +32,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test Adapter for Google Test: Test execution starting...]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Adaptador de Teste para o Google Test: iniciando a execução de teste...]]></Val>
+            <Val><![CDATA[Adaptador de Teste para Google Test: iniciando a execução de teste...]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -41,7 +41,7 @@
         <Str Cat="Text">
           <Val><![CDATA[{0}Check out Test Adapter for Google Test's trouble shooting section at https://go.microsoft.com/fwlink/?linkid=848168]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{0}Confira o Adaptador de Teste para a seção de solução de problemas do Google Test em https://go.microsoft.com/fwlink/?linkid=848168]]></Val>
+            <Val><![CDATA[{0}Confira a seção de solução de problemas do Adaptador de Teste para Google Test em https://go.microsoft.com/fwlink/?linkid=848168]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -55,7 +55,7 @@
     <Disp Icon="Ver" Disp="true" LocTbl="false" Path=" \ ;Version \ 8 \ 0" />
     <Item ItemId=";AssemblyVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.1.0.0]]></Val>
+        <Val><![CDATA[0.10.1.1]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -63,7 +63,7 @@
       <Str Cat="Text">
         <Val><![CDATA[Common infrastructure for the Test Adapter for Google Test projects]]></Val>
         <Tgt Cat="Text" Stat="Loc" Orig="New">
-          <Val><![CDATA[Infraestrutura comum para o Adaptador de Teste para projetos do Google Test]]></Val>
+          <Val><![CDATA[Infraestrutura comum para os projetos do Adaptador de Teste para Google Test]]></Val>
         </Tgt>
       </Str>
       <Disp Icon="Str" />
@@ -88,7 +88,7 @@
     </Item>
     <Item ItemId=";FileVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.1.0.0]]></Val>
+        <Val><![CDATA[0.10.1.1]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -124,7 +124,7 @@
     </Item>
     <Item ItemId=";ProductVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.1.0.0]]></Val>
+        <Val><![CDATA[0.10.1.1]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
