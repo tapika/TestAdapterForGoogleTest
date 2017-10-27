@@ -545,7 +545,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Batchdatei für Testbereinigung]]></Val>
+            <Val><![CDATA[Batchdatei für Testnachbereitung]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1220,7 +1220,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test teardown batch file]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Batchdatei für Testbereinigung]]></Val>
+            <Val><![CDATA[Batchdatei für Testnachbereitung]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1256,7 +1256,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Using splitter based on test durations]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Die Teilung wird basierend auf Testzeiträumen verwendet.]]></Val>
+            <Val><![CDATA[Splitter wird basierend auf der Testdauer verwendet.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1265,7 +1265,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Using splitter based on number of tests]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Die Teilung wird basierend auf der Anzahl von Tests verwendet.]]></Val>
+            <Val><![CDATA[Splitter wird basierend auf der Anzahl von Tests verwendet.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
