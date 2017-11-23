@@ -446,7 +446,7 @@
         <Str Cat="Text">
           <Val><![CDATA[No known test case for test result of line '{0}' - are you repeating a test run, but tests have changed in the meantime?]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Brak znanego przypadku testowego dla wyniku testu z wiersza „{0}” — czy powtarzasz uruchomienie testu, ale testy w międzyczasie uległy zmianie?]]></Val>
+            <Val><![CDATA[Brak znanego przypadku testowego dla wyniku testu z wiersza „{0}” — czy powtarzasz przebieg testu, ale testy w międzyczasie uległy zmianie?]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1166,7 +1166,7 @@
         <Str Cat="Text">
           <Val><![CDATA[{0}{1} test cases seem to not have been run - are you repeating a test run, but tests have changed in the meantime? Test cases:{2}{3}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Istnieją przypadki testowe ({0}{1}), które wyglądają na nieuruchomione — czy powtarzasz uruchomienie testów, ale testy w międzyczasie uległy zmianie? Przypadki testowe:{2}{3}]]></Val>
+            <Val><![CDATA[Istnieją przypadki testowe ({0}{1}), które wyglądają na nieuruchomione — czy powtarzasz przebieg testu, ale testy w międzyczasie uległy zmianie? Przypadki testowe:{2}{3}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1300,7 +1300,7 @@
     <Disp Icon="Ver" Disp="true" LocTbl="false" Path=" \ ;Version \ 8 \ 0" />
     <Item ItemId=";AssemblyVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.2]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -1333,7 +1333,7 @@
     </Item>
     <Item ItemId=";FileVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.2]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -1369,7 +1369,7 @@
     </Item>
     <Item ItemId=";ProductVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.2]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
