@@ -28,6 +28,15 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
+      <Item ItemId=";ImageDirectoryEntryToData" ItemType="0" PsrId="211" Leaf="true">
+        <Str Cat="Text">
+          <Val><![CDATA[ImageDirectoryEntryToData failed!]]></Val>
+          <Tgt Cat="Text" Stat="Loc" Orig="New">
+            <Val><![CDATA[ImageDirectoryEntryToData 失败!]]></Val>
+          </Tgt>
+        </Str>
+        <Disp Icon="Str" />
+      </Item>
       <Item ItemId=";LineNumberError" ItemType="0" PsrId="211" InstFlg="true" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Failed to locate line number for {0}]]></Val>
@@ -100,7 +109,7 @@
     <Disp Icon="Ver" Disp="true" LocTbl="false" Path=" \ ;Version \ 8 \ 0" />
     <Item ItemId=";AssemblyVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.0]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -133,7 +142,7 @@
     </Item>
     <Item ItemId=";FileVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.0]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -169,7 +178,7 @@
     </Item>
     <Item ItemId=";ProductVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.0]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>

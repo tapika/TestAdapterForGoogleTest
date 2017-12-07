@@ -739,24 +739,6 @@
         </Str>
         <Disp Icon="Str" />
       </Item>
-      <Item ItemId=";OptionReportNewProjectTelemetry" ItemType="0" PsrId="211" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Report Telemetry]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Relatar Telemetria]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
-      <Item ItemId=";OptionReportNewProjectTelemetryDescription" ItemType="0" PsrId="211" Leaf="true">
-        <Str Cat="Text">
-          <Val><![CDATA[Report telemetry to Visual Studio when using the New Project wizard for Google Test]]></Val>
-          <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Relatar telemetria para o Visual Studio ao usar o Assistente para novo projeto para Google Test]]></Val>
-          </Tgt>
-        </Str>
-        <Disp Icon="Str" />
-      </Item>
       <Item ItemId=";OptionRunDisabledTests" ItemType="0" PsrId="211" Leaf="true">
         <Str Cat="Text">
           <Val><![CDATA[Also run disabled tests]]></Val>
@@ -1318,7 +1300,7 @@
     <Disp Icon="Ver" Disp="true" LocTbl="false" Path=" \ ;Version \ 8 \ 0" />
     <Item ItemId=";AssemblyVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -1326,7 +1308,7 @@
       <Str Cat="Text">
         <Val><![CDATA[Adds support for the C++ unit testing framework Google Tests]]></Val>
         <Tgt Cat="Text" Stat="Loc" Orig="New">
-          <Val><![CDATA[Adiciona suporte para Google Tests da estrutura de testes de unidade de C++]]></Val>
+          <Val><![CDATA[Adiciona suporte para Google Test da estrutura de testes de unidade de C++]]></Val>
         </Tgt>
       </Str>
       <Disp Icon="Str" />
@@ -1351,7 +1333,7 @@
     </Item>
     <Item ItemId=";FileVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -1387,7 +1369,7 @@
     </Item>
     <Item ItemId=";ProductVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
