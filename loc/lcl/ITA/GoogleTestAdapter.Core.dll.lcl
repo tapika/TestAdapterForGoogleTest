@@ -122,7 +122,7 @@
         <Str Cat="Text">
           <Val><![CDATA[{0}Collected {1} test result(s) from result XML file {2}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{0}- raccolto/i {1} risultato/i di test dal file XML di risultati {2}]]></Val>
+            <Val><![CDATA[{0}- Raccolto/i {1} risultato/i di test dal file XML di risultati {2}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -131,7 +131,7 @@
         <Str Cat="Text">
           <Val><![CDATA[{0}Collected {1} test results from console output]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{0}- raccolti {1} risultati di test dall'output della console]]></Val>
+            <Val><![CDATA[{0}- Raccolti {1} risultati di test dall'output della console]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -725,7 +725,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Print test output]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Stampa output dei test]]></Val>
+            <Val><![CDATA[Stampa output del test]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
