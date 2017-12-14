@@ -329,7 +329,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Execution is already running with settings for executable {0}, cannot switch to settings for {1}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[A execução já está sendo executada com as configurações para o executável {0}, não é possível mudar as configurações para {1}]]></Val>
+            <Val><![CDATA[A execução já está sendo realizada com as configurações para o executável {0}, não é possível mudar as configurações para {1}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -716,7 +716,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If non-empty, the content will be appended to the PATH variable of the test execution and discovery processes.]D;]A;Example: C:\MyBins;{0}\MyOtherBins;]D;]A;Placeholders:]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Se não vazio, o conteúdo será anexado à variável CAMINHO da execução do teste e dos processos de descoberta.]D;]A;Exemplo: C:\MyBins; {0}\MyOtherBins;]D;]A;Espaços reservados:]]></Val>
+            <Val><![CDATA[Se não estiver vazio, o conteúdo será anexado à variável PATH da execução do teste e dos processos de descoberta.]D;]A;Exemplo: C:\MyBins; {0}\MyOtherBins;]D;]A;Espaços reservados:]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -770,7 +770,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If true, a dialog with release notes is shown after the extension has been updated.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Se verdadeiro, uma caixa de diálogo com notas de versão será mostrada após a atualização da extensão.]]></Val>
+            <Val><![CDATA[Se for verdadeiro, uma caixa de diálogo com notas de versão será mostrada após a atualização da extensão.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1283,7 +1283,7 @@
         <Str Cat="Text">
           <Val><![CDATA[XmlNode could not be parsed: '{0}'. Exception message: {1}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[O XmlNode não pôde ser analisado: "{0}". Mensagem de exceção: {1}]]></Val>
+            <Val><![CDATA[O XmlNode não foi analisado: "{0}". Mensagem de exceção: {1}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
