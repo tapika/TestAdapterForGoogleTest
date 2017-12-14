@@ -203,7 +203,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test discovery completed, overall duration: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[テスト検出が完了しました。全体の期間: {0}]]></Val>
+            <Val><![CDATA[テスト検出が完了しました。全体の継続時間: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -239,7 +239,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Google Test execution completed, overall duration: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Google Test の実行が完了しました。全体の期間: {0}]]></Val>
+            <Val><![CDATA[Google Test の実行が完了しました。全体の継続時間: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -257,7 +257,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Trait has same name as base test property and will thus be ignored for test case filtering: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[特徴の名前が基本テスト プロパティと同じであるため、テスト ケース フィルターで無視されます: {0}]]></Val>
+            <Val><![CDATA[特性の名前が基本テスト プロパティと同じであるため、テスト ケース フィルターで無視されます: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -337,7 +337,7 @@
     <Disp Icon="Ver" Disp="true" LocTbl="false" Path=" \ ;Version \ 8 \ 0" />
     <Item ItemId=";AssemblyVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -370,7 +370,7 @@
     </Item>
     <Item ItemId=";FileVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -406,7 +406,7 @@
     </Item>
     <Item ItemId=";ProductVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>

@@ -194,7 +194,7 @@
         <Str Cat="Text">
           <Val><![CDATA[{0}Created {1} test results for tests which were neither found in result XML file nor in console output]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{0}为结果 XML 文件或控制台输出中没有找到的测试创建了 {1} 个测试结果]]></Val>
+            <Val><![CDATA[{0}为结果 XML 文件和控制台输出中均没有找到的测试创建了 {1} 个测试结果]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -374,7 +374,7 @@
         <Str Cat="Text">
           <Val><![CDATA[No Google Test indicator file found for executable {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[未找到了用于可执行文件 {0} 的 Google Test 指示器文件]]></Val>
+            <Val><![CDATA[未找到用于可执行文件 {0} 的 Google Test 指示器文件]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -437,7 +437,7 @@
         <Str Cat="Text">
           <Val><![CDATA[{0} must never be < 0]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{0} 决不能小于 0]]></Val>
+            <Val><![CDATA[{0} 不得小于 0]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -644,7 +644,7 @@
         <Str Cat="Text">
           <Val><![CDATA[If true, running test executables are actively terminated if the test execution is canceled. Note that terminating a test process might have all kinds of side effects; in particular, Google Test will not be able to perform any shutdown tasks.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[如果为 true，测试执行被取消时时将主动终止正在运行的测试可执行文件。请注意，终止测试进程可能存在各种负面影响；尤其是造成 Google Test 将无法执行任何关闭任务。]]></Val>
+            <Val><![CDATA[如果为 true，测试执行被取消时将主动终止正在运行的测试可执行文件。请注意，终止测试进程可能存在各种负面影响；尤其是造成 Google Test 无法执行任何关闭任务。]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -887,7 +887,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Allows to override/add traits for testcases matching a regex. Traits are build up in 3 phases. First, traits are assigned to tests according to the 'Traits before' option. Next, the tests' traits (defined via the macros in GTA_Traits.h) are added to the tests, overriding traits from phase 1 with new values. Finally, the 'Traits after' option is evaluated, again in an overriding manner.]D;]A;Syntax: {0} separates the regex from the traits, the trait's name and value are separated by {1} and each pair of regex and trait is separated by {2}.]D;]A;Example: MySuite\.*{0}Type{1}Small{2}MySuite2\.*|MySuite3\.*{0}Type{1}Medium]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[允许替代/添加匹配正则表达式的测试用例的特征。特征由 3 个阶段构成。首先，根据“之前的特征”选项将特征分配给测试。然后，将测试的特征(在 GTA_Traits.h 中通过宏定义的)添加到测试中，使用新值从第 1 阶段替代特征。最后，再次以替代的方式评估“之后的特征”选项。]D;]A;语法: {0} 将正则表达式与特征分隔开，特征名称和值由 {1} 分隔，每对正则表达式和特征由 {2} 分隔。]D;]A;例如: MySuite\.*{0}Type{1}Small{2}MySuite2\.*|MySuite3\.*{0}Type{1}Medium]]></Val>
+            <Val><![CDATA[允许替代/添加匹配正则表达式的测试用例的特征。特征通过 3 个阶段生成。首先，根据“之前的特征”选项将特征分配给测试。然后，将测试的特征(在 GTA_Traits.h 中通过宏定义)添加到测试中，使用新值替代第 1 阶段的特征。最后，再次以替代的方式评估“之后的特征”选项。]D;]A;语法: {0} 将正则表达式与特征分隔开，特征名称和值由 {1} 分隔，每对正则表达式和特征由 {2} 分隔。]D;]A;例如: MySuite\.*{0}Type{1}Small{2}MySuite2\.*|MySuite3\.*{0}Type{1}Medium]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1300,7 +1300,7 @@
     <Disp Icon="Ver" Disp="true" LocTbl="false" Path=" \ ;Version \ 8 \ 0" />
     <Item ItemId=";AssemblyVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -1333,7 +1333,7 @@
     </Item>
     <Item ItemId=";FileVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -1369,7 +1369,7 @@
     </Item>
     <Item ItemId=";ProductVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
