@@ -446,7 +446,7 @@
         <Str Cat="Text">
           <Val><![CDATA[No known test case for test result of line '{0}' - are you repeating a test run, but tests have changed in the meantime?]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kein bekannter Testfall für das Testergebnis in der Zeile "{0}". Möglicherweise wiederholen Sie einen Testlauf, aber die Tests haben sich in der Zwischenzeit geändert?]]></Val>
+            <Val><![CDATA[Kein bekannter Testfall für das Testergebnis in der Zeile "{0}". Möglicherweise wiederholen Sie einen Testlauf, obwohl die Tests in der Zwischenzeit geändert wurden.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1166,7 +1166,7 @@
         <Str Cat="Text">
           <Val><![CDATA[{0}{1} test cases seem to not have been run - are you repeating a test run, but tests have changed in the meantime? Test cases:{2}{3}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{0}{1} Testfälle wurden offenbar nicht ausgeführt. Möglicherweise wiederholen Sie einen Testlauf, aber die Tests wurden in der Zwischenzeit geändert? Testfälle:{2}{3}]]></Val>
+            <Val><![CDATA[{0}{1} Testfälle wurden offenbar nicht ausgeführt. Möglicherweise wiederholen Sie einen Testlauf, obwohl die Tests in der Zwischenzeit geändert wurden. Testfälle:{2}{3}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
