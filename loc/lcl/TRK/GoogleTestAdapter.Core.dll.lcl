@@ -698,7 +698,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Parse debug symbol information for test executables to obtain source location information and traits (defined via the macros in GTA_Traits.h).]D;]A;If this is set to false, step 2 of traits discovery will be left out and only traits regexes will be effective.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Kaynak konumu bilgilerini ve nitelikleri (GTA_Traits.h içindeki makrolar aracılığıyla tanımlanır) almak için test yürütülebilir dosyalarında hata ayıklama sembolü bilgilerini ayrıştırır.]D;]A;False olarak ayarlanırsa, nitelik bulmanın 2. adımı atlanır ve yalnızca traits normal ifadeleri geçerli olur.]]></Val>
+            <Val><![CDATA[Kaynak konumu bilgilerini ve nitelikleri (GTA_Traits.h içindeki makrolar aracılığıyla tanımlanır) almak için test yürütülebilir dosyalarında hata ayıklama sembolü bilgilerini ayrıştırır.]D;]A;False olarak ayarlanırsa, nitelik bulmanın 2. adımı atlanır ve yalnızca nitelik normal ifadeleri geçerli olur.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -860,7 +860,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test names produced by Google Test might contain the character '/', which makes Visual Studio cut the name after the '/' if the Test Explorer window is not wide enough. This option's value, if non-empty, will replace the '/' character to avoid that behavior. Note that '\', ' ', '|', and '-' produce the same behavior ('.', '_', ':', and '::' are known to work). Note also that traits regexes are evaluated against the tests' display names (and must thus be consistent with this option).]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Google Test tarafından üretilen test adları, '/' karakterini içerebilir. Bu da Test Listesi Düzenleyicisi ekranının yeterince büyük olmadığı durumlarda Visual Studio'nun, adın '/' karakterinden sonrasını kesmesine neden olur. Bu seçeneğin değeri, boş değilse, '/' karakterini bu davranıştan kaçınmasını sağlayacak şekilde değiştirir. '\', ' ', '|' ve '-' karakterleri, ('.', '_', ':' ve '::') karakterleriyle aynı davranışı üretir. Ayrıca traits normal ifadeleri, testlerin görünen adlarıyla karşılaştırmalı olarak hesaplanır (ve bu nedenle, bu seçenekle tutarlı olması gerekir).]]></Val>
+            <Val><![CDATA[Google Test tarafından üretilen test adları, '/' karakterini içerebilir. Bu da Test Listesi Düzenleyicisi ekranının yeterince büyük olmadığı durumlarda Visual Studio'nun, adın '/' karakterinden sonrasını kesmesine neden olur. Bu seçeneğin değeri, boş değilse, '/' karakterini bu davranıştan kaçınmasını sağlayacak şekilde değiştirir. '\', ' ', '|' ve '-' karakterleri, ('.', '_', ':' ve '::') karakterleriyle aynı davranışı üretir. Ayrıca nitelik normal ifadeleri, testlerin görünen adlarıyla karşılaştırmalı olarak hesaplanır (ve bu nedenle, bu seçenekle tutarlı olması gerekir).]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -923,7 +923,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Make use of the new test execution framework. Advantages: test crash detection and test output printing also work in debug mode.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Yeni test yürütme çerçevesini kullanın. Avantajları: test kilitlenmesi algılama ve test çıkışı yazdırma, hata ayıklama modunda da çalışır.]]></Val>
+            <Val><![CDATA[Yeni test yürütme çerçevesini kullanın. Avantajları: Test kilitlenmesi algılama ve test çıkışı yazdırma, hata ayıklama modunda da çalışır.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1300,7 +1300,7 @@
     <Disp Icon="Ver" Disp="true" LocTbl="false" Path=" \ ;Version \ 8 \ 0" />
     <Item ItemId=";AssemblyVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -1333,7 +1333,7 @@
     </Item>
     <Item ItemId=";FileVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
@@ -1369,7 +1369,7 @@
     </Item>
     <Item ItemId=";ProductVersion" ItemType="0" PsrId="211" Leaf="true">
       <Str Cat="Text" DevLk="true">
-        <Val><![CDATA[0.10.1.1]]></Val>
+        <Val><![CDATA[0.10.1.3]]></Val>
       </Str>
       <Disp Icon="Str" />
     </Item>
