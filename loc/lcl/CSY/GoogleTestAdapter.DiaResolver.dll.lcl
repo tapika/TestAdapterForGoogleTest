@@ -95,7 +95,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Couldn't find the msdia.dll to parse *.pdb files. You will not get any source locations for your tests.]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Nešlo najít msdia.dll pro analýzu souborů *.pdb. Nenačtou se žádná zdrojová umístění pro vaše testy.]]></Val>
+            <Val><![CDATA[Nepovedlo se najít knihovnu msdia.dll pro analýzu souborů *.pdb. Nenačtou se žádná zdrojová umístění pro vaše testy.]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
