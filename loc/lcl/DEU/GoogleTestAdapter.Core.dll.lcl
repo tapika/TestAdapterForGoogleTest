@@ -32,7 +32,7 @@
         <Str Cat="Text">
           <Val><![CDATA[{0}Test case already in analyzer: {1}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[{0}Der Testfall ist im Analyzer bereits enthalten: {1}]]></Val>
+            <Val><![CDATA[{0}Der Testfall ist im Analysetool bereits enthalten: {1}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1157,7 +1157,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test case already in analyzer: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Der Testfall ist im Analyzer bereits enthalten: {0}]]></Val>
+            <Val><![CDATA[Der Testfall ist im Analysetool bereits enthalten: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

@@ -1157,7 +1157,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Test case already in analyzer: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Il test case è già presente in Analyzer: {0}]]></Val>
+            <Val><![CDATA[Il test case è già presente nell'analizzatore: {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />

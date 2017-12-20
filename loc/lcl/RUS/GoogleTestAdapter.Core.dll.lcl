@@ -167,7 +167,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Could not terminate process {0} started at {1}: {2}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Не удалось завершить процесс {0}, запущенный в {1}: {2}.]]></Val>
+            <Val><![CDATA[Не удалось завершить процесс {0}, запущенный в {1}. {2}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -536,7 +536,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Batch file to be executed before test execution. If tests are executed in parallel, the batch file will be executed once per thread. Placeholders:]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Пакетный файл, выполняемый перед выполнением тестов. Если тесты выполняются параллельно, пакетный файл выполняется один раз для каждого потока. Заполнители:]]></Val>
+            <Val><![CDATA[Пакетный файл, выполняемый перед тестами. Если тесты выполняются параллельно, пакетный файл выполняется один раз для каждого потока. Заполнители:]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
@@ -1013,7 +1013,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Could not read test durations: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[Не удается прочитать время выполнения тестов: {0}.]]></Val>
+            <Val><![CDATA[Не удается прочитать время выполнения тестов. {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
