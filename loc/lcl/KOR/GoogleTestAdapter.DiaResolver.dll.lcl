@@ -14,7 +14,7 @@
         <Str Cat="Text">
           <Val><![CDATA[Attempts to find PDB: {0}]]></Val>
           <Tgt Cat="Text" Stat="Loc" Orig="New">
-            <Val><![CDATA[PDB를 찾으려고 시도합니다. {0}]]></Val>
+            <Val><![CDATA[PDB 검색을 시도합니다. {0}]]></Val>
           </Tgt>
         </Str>
         <Disp Icon="Str" />
