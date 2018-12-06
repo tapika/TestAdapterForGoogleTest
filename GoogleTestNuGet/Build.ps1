@@ -252,12 +252,12 @@ function Build-NuGet {
         $DestinationPath = $_[1]
 
         if ($DynamicLibraryLinkage) {
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest.dll"      -Destination "$DestinationPath\Debug\gtest.dll"
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest.lib"      -Destination "$DestinationPath\Debug\gtest.lib"
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest.pdb"      -Destination "$DestinationPath\Debug\gtest.pdb"
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest_main.dll" -Destination "$DestinationPath\Debug\gtest_main.dll"
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest_main.lib" -Destination "$DestinationPath\Debug\gtest_main.lib"
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest_main.pdb" -Destination "$DestinationPath\Debug\gtest_main.pdb"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtestd.dll"      -Destination "$DestinationPath\Debug\gtestd.dll"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtestd.lib"      -Destination "$DestinationPath\Debug\gtestd.lib"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtestd.pdb"      -Destination "$DestinationPath\Debug\gtestd.pdb"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtest_maind.dll" -Destination "$DestinationPath\Debug\gtest_maind.dll"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtest_maind.lib" -Destination "$DestinationPath\Debug\gtest_maind.lib"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtest_maind.pdb" -Destination "$DestinationPath\Debug\gtest_maind.pdb"
 
             Copy-CreateItem -Path "$BuildPath\RelWithDebInfo\gtest.dll"      -Destination "$DestinationPath\Release\gtest.dll"
             Copy-CreateItem -Path "$BuildPath\RelWithDebInfo\gtest.lib"      -Destination "$DestinationPath\Release\gtest.lib"
@@ -266,10 +266,10 @@ function Build-NuGet {
             Copy-CreateItem -Path "$BuildPath\RelWithDebInfo\gtest_main.lib" -Destination "$DestinationPath\Release\gtest_main.lib"
             Copy-CreateItem -Path "$BuildPath\RelWithDebInfo\gtest_main.pdb" -Destination "$DestinationPath\Release\gtest_main.pdb"
         } else {
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest.lib"                              -Destination "$DestinationPath\Debug\gtest.lib"
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest.pdb"                              -Destination "$DestinationPath\Debug\gtest.pdb"
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest_main.lib"                         -Destination "$DestinationPath\Debug\gtest_main.lib"
-            Copy-CreateItem -Path "$BuildPath\Debug\gtest_main.pdb"                         -Destination "$DestinationPath\Debug\gtest_main.pdb"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtestd.lib"                              -Destination "$DestinationPath\Debug\gtestd.lib"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtestd.pdb"                              -Destination "$DestinationPath\Debug\gtestd.pdb"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtest_maind.lib"                         -Destination "$DestinationPath\Debug\gtest_maind.lib"
+            Copy-CreateItem -Path "$BuildPath\Debug\gtest_maind.pdb"                         -Destination "$DestinationPath\Debug\gtest_maind.pdb"
 
             Copy-CreateItem -Path "$BuildPath\RelWithDebInfo\gtest.lib"                     -Destination "$DestinationPath\Release\gtest.lib"
             Copy-CreateItem -Path "$BuildPath\gtest.dir\RelWithDebInfo\gtest.pdb"           -Destination "$DestinationPath\Release\gtest.pdb"
