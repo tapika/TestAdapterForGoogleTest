@@ -141,16 +141,22 @@ function Add-Signing {
     $RealSignGroup.AppendChild($DelaySign) | Out-Null
 
     $FileSignGroup = $xml.CreateElement("ItemGroup", "http://schemas.microsoft.com/developer/msbuild/2003")
-    $FilesToSign = $xml.CreateElement("FilesToSign", "http://schemas.microsoft.com/developer/msbuild/2003")
-    $FilesToSign.SetAttribute("Include", "`$(OutDir)\$ProjectName.dll")
-    $FilesToSign.SetAttribute("Condition", "'`$(RealSign)' == 'True' and '`$(TargetExt)' == '.dll'")
+    $FilesToSignRel = $xml.CreateElement("FilesToSign", "http://schemas.microsoft.com/developer/msbuild/2003")
+    $FilesToSignRel.SetAttribute("Include", "`$(OutDir)\$ProjectName.dll")
+    $FilesToSignRel.SetAttribute("Condition", "'`$(RealSign)' == 'True' and '`$(TargetExt)' == '.dll' and '`$(Configuration)' == 'RelWithDebInfo'")
+    $FilesToSignDebug = $xml.CreateElement("FilesToSign", "http://schemas.microsoft.com/developer/msbuild/2003")
+    $FilesToSignDebug.SetAttribute("Include", "`$(OutDir)\$ProjectNamed.dll")
+    $FilesToSignDebug.SetAttribute("Condition", "'`$(RealSign)' == 'True' and '`$(TargetExt)' == '.dll and '`$(Configuration)' == 'Debug''")
     $Authenticode = $xml.CreateElement("Authenticode", "http://schemas.microsoft.com/developer/msbuild/2003")
     $Authenticode.set_InnerXML("Microsoft")
     $StrongName = $xml.CreateElement("StrongName", "http://schemas.microsoft.com/developer/msbuild/2003")
     $StrongName.set_InnerXML("StrongName")
-    $FilesToSign.AppendChild($Authenticode) | Out-Null
-    $FilesToSign.AppendChild($StrongName) | Out-Null
-    $FileSignGroup.AppendChild($FilesToSign) | Out-Null
+    $FilesToSignRel.AppendChild($Authenticode) | Out-Null
+    $FilesToSignRel.AppendChild($StrongName) | Out-Null
+    $FilesToSignDebug.AppendChild($Authenticode) | Out-Null
+    $FilesToSignDebug.AppendChild($StrongName) | Out-Null
+    $FileSignGroup.AppendChild($FilesToSignRel) | Out-Null
+    $FileSignGroup.AppendChild($FilesToSignDebug) | Out-Null
 
     $MicroBuildTargets = $xml.CreateElement("Import", "http://schemas.microsoft.com/developer/msbuild/2003")
     $MicroBuildTargets.SetAttribute("Project", "$PSScriptRoot\..\NuGetPackages\MicroBuild.Core.0.2.0\build\MicroBuild.Core.targets")
