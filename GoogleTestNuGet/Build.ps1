@@ -156,8 +156,8 @@ function Add-Signing {
     $FilesToSignRel.AppendChild($StrongName) | Out-Null
     $FilesToSignDebug.AppendChild($Authenticode) | Out-Null
     $FilesToSignDebug.AppendChild($StrongName) | Out-Null
-    $FileSignGroup.AppendChild($FilesToSignRel) | Out-Null
     $FileSignGroup.AppendChild($FilesToSignDebug) | Out-Null
+    $FileSignGroup.AppendChild($FilesToSignRel) | Out-Null
 
     $MicroBuildTargets = $xml.CreateElement("Import", "http://schemas.microsoft.com/developer/msbuild/2003")
     $MicroBuildTargets.SetAttribute("Project", "$PSScriptRoot\..\NuGetPackages\MicroBuild.Core.0.2.0\build\MicroBuild.Core.targets")
@@ -169,8 +169,6 @@ function Add-Signing {
     $xml.Project.AppendChild($MicroBuildTargets) | Out-Null
 
     $xml.Save("$Directory\$ProjectName.vcxproj")
-
-    Write-Output $xml
 }
 
 function Build-Binaries {
