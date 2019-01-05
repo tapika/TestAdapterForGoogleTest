@@ -169,6 +169,8 @@ function Add-Signing {
     $xml.Project.AppendChild($MicroBuildTargets) | Out-Null
 
     $xml.Save("$Directory\$ProjectName.vcxproj")
+
+    Write-Output $xml
 }
 
 function Build-Binaries {
