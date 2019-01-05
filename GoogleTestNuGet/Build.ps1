@@ -126,6 +126,7 @@ function Add-Signing {
     )
 
     $xml = [xml](Get-Content "$Directory\$ProjectName.vcxproj")
+    $ProjectNameDebug = -join("$ProjectName", "d")
 
     $MicroBuildProps = $xml.CreateElement("Import", "http://schemas.microsoft.com/developer/msbuild/2003")
     $MicroBuildProps.SetAttribute("Project", "$PSScriptRoot\..\NuGetPackages\MicroBuild.Core.0.2.0\build\MicroBuild.Core.props")
@@ -145,7 +146,7 @@ function Add-Signing {
     $FilesToSignRel.SetAttribute("Include", "`$(OutDir)\$ProjectName.dll")
     $FilesToSignRel.SetAttribute("Condition", "'`$(RealSign)' == 'True' and '`$(TargetExt)' == '.dll' and '`$(Configuration)' == 'RelWithDebInfo'")
     $FilesToSignDebug = $xml.CreateElement("FilesToSign", "http://schemas.microsoft.com/developer/msbuild/2003")
-    $FilesToSignDebug.SetAttribute("Include", "`$(OutDir)\$ProjectNamed.dll")
+    $FilesToSignDebug.SetAttribute("Include", "`$(OutDir)\$ProjectNameDebug.dll")
     $FilesToSignDebug.SetAttribute("Condition", "'`$(RealSign)' == 'True' and '`$(TargetExt)' == '.dll and '`$(Configuration)' == 'Debug''")
     $Authenticode = $xml.CreateElement("Authenticode", "http://schemas.microsoft.com/developer/msbuild/2003")
     $Authenticode.set_InnerXML("Microsoft")
