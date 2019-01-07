@@ -152,10 +152,10 @@ function Add-Signing {
     $Authenticode.set_InnerXML("Microsoft")
     $StrongName = $xml.CreateElement("StrongName", "http://schemas.microsoft.com/developer/msbuild/2003")
     $StrongName.set_InnerXML("StrongName")
-    $FilesToSignRel.AppendChild($Authenticode) | Out-Null
-    $FilesToSignRel.AppendChild($StrongName) | Out-Null
     $FilesToSignDebug.AppendChild($Authenticode) | Out-Null
     $FilesToSignDebug.AppendChild($StrongName) | Out-Null
+    $FilesToSignRel.AppendChild($Authenticode) | Out-Null
+    $FilesToSignRel.AppendChild($StrongName) | Out-Null
     $FileSignGroup.AppendChild($FilesToSignDebug) | Out-Null
     $FileSignGroup.AppendChild($FilesToSignRel) | Out-Null
 
