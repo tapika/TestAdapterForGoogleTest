@@ -144,6 +144,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTestProjectTemplate",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTestItemTemplate", "GoogleTestItemTemplate\GoogleTestItemTemplate.csproj", "{87A1108A-3819-4B31-99EA-217F3E11E958}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAdapterStarter", "TestAdapterStarter\TestAdapterStarter.csproj", "{C73DE936-C324-4825-9A30-E38DB4CF10E2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3ADB538-F3DF-4C5F-960D-11B6DF66A1A3} = {A3ADB538-F3DF-4C5F-960D-11B6DF66A1A3}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		VsPackage.Shared\VsPackage.Shared.projitems*{55294b5f-a075-43f2-b0e9-2b11925e8b91}*SharedItemsImports = 4
@@ -291,6 +296,10 @@ Global
 		{87A1108A-3819-4B31-99EA-217F3E11E958}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87A1108A-3819-4B31-99EA-217F3E11E958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87A1108A-3819-4B31-99EA-217F3E11E958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C73DE936-C324-4825-9A30-E38DB4CF10E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C73DE936-C324-4825-9A30-E38DB4CF10E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C73DE936-C324-4825-9A30-E38DB4CF10E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C73DE936-C324-4825-9A30-E38DB4CF10E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
