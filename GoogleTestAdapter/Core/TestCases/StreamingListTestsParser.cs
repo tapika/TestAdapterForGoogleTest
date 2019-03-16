@@ -29,18 +29,45 @@ namespace GoogleTestAdapter.TestCases
 
         public event EventHandler<TestCaseCreatedEventArgs> TestCaseCreated;
 
+        public static Regex matchLocationLine = new Regex("^ *<loc>(.*)\\((\\d+\\))");
 
-        public void ReportLine(string line)
+        /// <summary>
+        /// Source code location / line position where particular test resides.
+        /// </summary>
+        String _currentSource = null;
+        int _currentLineNumber;
+
+
+        public void ReportLine(string _line)
         {
-            string trimmedLine = line.Trim('.', '\n', '\r');
-            if (trimmedLine.StartsWith("  ", StringComparison.Ordinal))
+            string line = _line.Trim('.', '\n', '\r');
+
+            var m = matchLocationLine.Match(line);
+            if (m.Success)
             {
-                TestCase descriptor = CreateTestCase(_currentSuite, trimmedLine.Substring(2));
-                TestCaseCreated?.Invoke(this, new TestCaseCreatedEventArgs {TestCase = descriptor});
+                _currentSource = m.Groups[1].Value;
+                if (!Int32.TryParse(m.Groups[2].Value, out _currentLineNumber))
+                    _currentLineNumber = 1;
+
+                return;
+            }
+            
+            if (line.StartsWith("  ", StringComparison.Ordinal))
+            {
+                TestCase testcase = CreateTestCase(_currentSuite, line.Substring(2));
+                if (_currentSource != null)
+                {
+                    testcase.CodeFilePath = _currentSource;
+                    testcase.LineNumber = _currentLineNumber;
+                }
+
+                TestCaseCreated?.Invoke(this, new TestCaseCreatedEventArgs {TestCase = testcase});
+                _currentSource = null;
+                _currentLineNumber = 1;
             }
             else
             {
-                _currentSuite = trimmedLine;
+                _currentSuite = line;
             }
         }
 

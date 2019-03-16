@@ -231,6 +231,9 @@ namespace GoogleTestAdapter.TestCases
 
         private TestCase FinilizeTestCase(TestCase testcase, TestCaseLocation location)
         {
+            if (testcase.CodeFilePath != "")
+                return testcase;
+        
             if (location != null)
             {
                 testcase.CodeFilePath = location.Sourcefile;
