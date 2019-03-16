@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using GoogleTestAdapter.Helpers;
+using GoogleTestAdapter.Model;
 
 namespace GoogleTestAdapter.TestCases
 {
@@ -10,27 +11,27 @@ namespace GoogleTestAdapter.TestCases
     internal class MethodSignatureCreator
     {
 
-        internal IEnumerable<string> GetTestMethodSignatures(TestCaseDescriptor descriptor)
+        internal IEnumerable<string> GetTestMethodSignatures(TestCase testcase)
         {
-            switch (descriptor.TestType)
+            switch (testcase.TestType)
             {
-                case TestCaseDescriptor.TestTypes.TypeParameterized:
-                    return GetTypedTestMethodSignatures(descriptor);
-                case TestCaseDescriptor.TestTypes.Parameterized:
-                    return GetParameterizedTestMethodSignature(descriptor).Yield();
-                case TestCaseDescriptor.TestTypes.Simple:
-                    return GetTestMethodSignature(descriptor.Suite, descriptor.Name).Yield();
+                case TestCase.TestTypes.TypeParameterized:
+                    return GetTypedTestMethodSignatures(testcase);
+                case TestCase.TestTypes.Parameterized:
+                    return GetParameterizedTestMethodSignature(testcase).Yield();
+                case TestCase.TestTypes.Simple:
+                    return GetTestMethodSignature(testcase.Suite, testcase.Name).Yield();
                 default:
-                    throw new InvalidOperationException(String.Format(Resources.UnknownLiteral, descriptor.TestType));
+                    throw new InvalidOperationException(String.Format(Resources.UnknownLiteral, testcase.TestType));
             }
         }
 
-        private IEnumerable<string> GetTypedTestMethodSignatures(TestCaseDescriptor descriptor)
+        private IEnumerable<string> GetTypedTestMethodSignatures(TestCase testCase)
         {
             var result = new List<string>();
 
             // remove instance number
-            string suite = descriptor.Suite.Substring(0, descriptor.Suite.LastIndexOf("/", StringComparison.Ordinal));
+            string suite = testCase.Suite.Substring(0, testCase.Suite.LastIndexOf("/", StringComparison.Ordinal));
 
             // remove prefix
             if (suite.Contains("/"))
@@ -42,24 +43,24 @@ namespace GoogleTestAdapter.TestCases
             string typeParam = "<.+>";
 
             // <testcase name>_<test name>_Test<type param value>::TestBody
-            result.Add(GetTestMethodSignature(suite, descriptor.Name, typeParam));
+            result.Add(GetTestMethodSignature(suite, testCase.Name, typeParam));
 
             // gtest_case_<testcase name>_::<test name><type param value>::TestBody
             string signature =
-                $"gtest_case_{suite}_::{descriptor.Name}{typeParam}{GoogleTestConstants.TestBodySignature}";
+                $"gtest_case_{suite}_::{testCase.Name}{typeParam}{GoogleTestConstants.TestBodySignature}";
             result.Add(signature);
 
             return result;
         }
 
-        private string GetParameterizedTestMethodSignature(TestCaseDescriptor descriptor)
+        private string GetParameterizedTestMethodSignature(TestCase testcase)
         {
             // remove instance number
-            int index = descriptor.Suite.IndexOf('/');
-            string suite = index < 0 ? descriptor.Suite : descriptor.Suite.Substring(index + 1);
+            int index = testcase.Suite.IndexOf('/');
+            string suite = index < 0 ? testcase.Suite : testcase.Suite.Substring(index + 1);
 
-            index = descriptor.Name.IndexOf('/');
-            string testName = index < 0 ? descriptor.Name : descriptor.Name.Substring(0, index);
+            index = testcase.Name.IndexOf('/');
+            string testName = index < 0 ? testcase.Name : testcase.Name.Substring(0, index);
 
             return GetTestMethodSignature(suite, testName);
         }

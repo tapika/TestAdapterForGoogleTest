@@ -1,5 +1,6 @@
 ﻿// This file has been modified by Microsoft on 9/2017.
 
+using GoogleTestAdapter.Model;
 using System;
 using System.Text.RegularExpressions;
 
@@ -21,12 +22,12 @@ namespace GoogleTestAdapter.TestCases
             _testNameSeparator = testNameSeparator;
         }
 
-        public class TestCaseDescriptorCreatedEventArgs : EventArgs
+        public class TestCaseCreatedEventArgs : EventArgs
         {
-            public TestCaseDescriptor TestCaseDescriptor { get; set; }
+            public TestCase TestCase { get; set; }
         }
 
-        public event EventHandler<TestCaseDescriptorCreatedEventArgs> TestCaseDescriptorCreated;
+        public event EventHandler<TestCaseCreatedEventArgs> TestCaseCreated;
 
 
         public void ReportLine(string line)
@@ -34,9 +35,8 @@ namespace GoogleTestAdapter.TestCases
             string trimmedLine = line.Trim('.', '\n', '\r');
             if (trimmedLine.StartsWith("  ", StringComparison.Ordinal))
             {
-                TestCaseDescriptor descriptor = CreateDescriptor(_currentSuite, trimmedLine.Substring(2));
-                TestCaseDescriptorCreated?.Invoke(this,
-                    new TestCaseDescriptorCreatedEventArgs {TestCaseDescriptor = descriptor});
+                TestCase descriptor = CreateTestCase(_currentSuite, trimmedLine.Substring(2));
+                TestCaseCreated?.Invoke(this, new TestCaseCreatedEventArgs {TestCase = descriptor});
             }
             else
             {
@@ -44,7 +44,7 @@ namespace GoogleTestAdapter.TestCases
             }
         }
 
-        private TestCaseDescriptor CreateDescriptor(string suiteLine, string testCaseLine)
+        private TestCase CreateTestCase(string suiteLine, string testCaseLine)
         {
             Match suiteMatch = SuiteRegex.Match(suiteLine);
             string suite = suiteMatch.Groups[1].Value;
@@ -62,13 +62,13 @@ namespace GoogleTestAdapter.TestCases
             if (!string.IsNullOrEmpty(_testNameSeparator))
                 displayName = displayName.Replace("/", _testNameSeparator);
 
-            TestCaseDescriptor.TestTypes testType = TestCaseDescriptor.TestTypes.Simple;
+            TestCase.TestTypes testType = TestCase.TestTypes.Simple;
             if (IsParamRegex.IsMatch(suite))
-                testType = TestCaseDescriptor.TestTypes.TypeParameterized;
+                testType = TestCase.TestTypes.TypeParameterized;
             else if (IsParamRegex.IsMatch(name))
-                testType = TestCaseDescriptor.TestTypes.Parameterized;
+                testType = TestCase.TestTypes.Parameterized;
 
-            return new TestCaseDescriptor(suite, name, fullyQualifiedName, displayName, testType);
+            return new TestCase(suite, fullyQualifiedName, null, name, displayName) { TestType = testType };
         }
 
         private static string GetDisplayName(string fullyQalifiedName, string typeParam, string param)

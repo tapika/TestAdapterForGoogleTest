@@ -58,19 +58,19 @@ namespace GoogleTestAdapter.TestCases
                 return new List<TestCase>();
             }
 
-            IList<TestCaseDescriptor> testCaseDescriptors = new ListTestsParser(_settings.TestNameSeparator).ParseListTestsOutput(standardOutput);
-            var testCaseLocations = GetTestCaseLocations(testCaseDescriptors, _settings.GetPathExtension(_executable));
+            IList<TestCase> inTestCases = new ListTestsParser(_settings.TestNameSeparator).ParseListTestsOutput(standardOutput);
+            var testCaseLocations = GetTestCaseLocations(inTestCases, _settings.GetPathExtension(_executable));
 
             IList<TestCase> testCases = new List<TestCase>();
             IDictionary<string, ISet<TestCase>> suite2TestCases = new Dictionary<string, ISet<TestCase>>();
-            foreach (var descriptor in testCaseDescriptors)
+            foreach (var testcase in inTestCases)
             {
                 var testCase = _settings.ParseSymbolInformation 
-                    ? CreateTestCase(descriptor, testCaseLocations) 
-                    : CreateTestCase(descriptor);
+                    ? FinilizeTestCase(testcase, testCaseLocations) 
+                    : FinilizeTestCase(testcase);
                 ISet<TestCase> testCasesInSuite;
-                if (!suite2TestCases.TryGetValue(descriptor.Suite, out testCasesInSuite))
-                    suite2TestCases.Add(descriptor.Suite, testCasesInSuite = new HashSet<TestCase>());
+                if (!suite2TestCases.TryGetValue(testcase.Suite, out testCasesInSuite))
+                    suite2TestCases.Add(testcase.Suite, testCasesInSuite = new HashSet<TestCase>());
                 testCasesInSuite.Add(testCase);
                 testCases.Add(testCase);
             }
@@ -99,25 +99,24 @@ namespace GoogleTestAdapter.TestCases
 
             var suite2TestCases = new Dictionary<string, ISet<TestCase>>();
             var parser = new StreamingListTestsParser(_settings.TestNameSeparator);
-            parser.TestCaseDescriptorCreated += (sender, args) =>
+            parser.TestCaseCreated += (sender, args) =>
             {
                 TestCase testCase;
                 if (_settings.ParseSymbolInformation)
                 {
-                    TestCaseLocation testCaseLocation =
-                        resolver.FindTestCaseLocation(
-                            _signatureCreator.GetTestMethodSignatures(args.TestCaseDescriptor).ToList());
-                    testCase = CreateTestCase(args.TestCaseDescriptor, testCaseLocation);
+                    TestCaseLocation testCaseLocation = resolver.FindTestCaseLocation( _signatureCreator.GetTestMethodSignatures(args.TestCase).ToList());
+                    testCase = FinilizeTestCase(args.TestCase, testCaseLocation);
                 }
                 else
                 {
-                    testCase = CreateTestCase(args.TestCaseDescriptor);
+                    testCase = FinilizeTestCase(args.TestCase);
                 }
+                testCase.Source = _executable;
                 testCases.Add(testCase);
 
                 ISet<TestCase> testCasesOfSuite;
-                if (!suite2TestCases.TryGetValue(args.TestCaseDescriptor.Suite, out testCasesOfSuite))
-                    suite2TestCases.Add(args.TestCaseDescriptor.Suite, testCasesOfSuite = new HashSet<TestCase>());
+                if (!suite2TestCases.TryGetValue(args.TestCase.Suite, out testCasesOfSuite))
+                    suite2TestCases.Add(args.TestCase.Suite, testCasesOfSuite = new HashSet<TestCase>());
                 testCasesOfSuite.Add(testCase);
             };
 
@@ -196,10 +195,10 @@ namespace GoogleTestAdapter.TestCases
             return true;
         }
 
-        private Dictionary<string, TestCaseLocation> GetTestCaseLocations(IList<TestCaseDescriptor> testCaseDescriptors, string pathExtension)
+        private Dictionary<string, TestCaseLocation> GetTestCaseLocations(IList<TestCase> testCases, string pathExtension)
         {
             var testMethodSignatures = new HashSet<string>();
-            foreach (var descriptor in testCaseDescriptors)
+            foreach (var descriptor in testCases)
             {
                 foreach (var signature in _signatureCreator.GetTestMethodSignatures(descriptor))
                 {
@@ -212,39 +211,36 @@ namespace GoogleTestAdapter.TestCases
             return resolver.ResolveAllTestCases(_executable, testMethodSignatures, filterString, pathExtension);
         }
 
-        private TestCase CreateTestCase(TestCaseDescriptor descriptor)
+        private TestCase FinilizeTestCase(TestCase testcase)
         {
-            var testCase = new TestCase(
-                descriptor.FullyQualifiedName, _executable, descriptor.DisplayName, "", 0);
-            testCase.Traits.AddRange(GetFinalTraits(descriptor.DisplayName, new List<Trait>()));
-            return testCase;
+            testcase.Traits.AddRange(GetFinalTraits(testcase.DisplayName, new List<Trait>()));
+            return testcase;
         }
 
-        private TestCase CreateTestCase(TestCaseDescriptor descriptor, Dictionary<string, TestCaseLocation> testCaseLocations)
+        private TestCase FinilizeTestCase(TestCase testcase, Dictionary<string, TestCaseLocation> testCaseLocations)
         {
-            var signature = _signatureCreator.GetTestMethodSignatures(descriptor)
+            var signature = _signatureCreator.GetTestMethodSignatures(testcase)
                 .Select(StripTestSymbolNamespace)
                 .FirstOrDefault(s => testCaseLocations.ContainsKey(s));
             TestCaseLocation location = null;
             if (signature != null)
                 testCaseLocations.TryGetValue(signature, out location);
 
-            return CreateTestCase(descriptor, location);
+            return FinilizeTestCase(testcase, location);
         }
 
-        private TestCase CreateTestCase(TestCaseDescriptor descriptor, TestCaseLocation location)
+        private TestCase FinilizeTestCase(TestCase testcase, TestCaseLocation location)
         {
             if (location != null)
             {
-                var testCase = new TestCase(
-                    descriptor.FullyQualifiedName, _executable, descriptor.DisplayName, location.Sourcefile, (int)location.Line);
-                testCase.Traits.AddRange(GetFinalTraits(descriptor.DisplayName, location.Traits));
-                return testCase;
+                testcase.CodeFilePath = location.Sourcefile;
+                testcase.LineNumber = (int)location.Line;
+                testcase.Traits.AddRange(GetFinalTraits(testcase.DisplayName, location.Traits));
+                return testcase;
             }
 
-            _logger.LogWarning(String.Format(Resources.LocationNotFoundError, descriptor.FullyQualifiedName));
-            return new TestCase(
-                descriptor.FullyQualifiedName, _executable, descriptor.DisplayName, "", 0);
+            _logger.LogWarning(String.Format(Resources.LocationNotFoundError, testcase.FullyQualifiedName));
+            return testcase;
         }
 
         internal static string StripTestSymbolNamespace(string symbol)
