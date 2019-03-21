@@ -29,7 +29,7 @@ namespace GoogleTestAdapter.TestCases
 
         public event EventHandler<TestCaseCreatedEventArgs> TestCaseCreated;
 
-        public static Regex matchLocationLine = new Regex("^ *<loc>(.*)\\((\\d+\\))");
+        public static Regex matchLocationLine = new Regex("^ *<loc>(.*)\\((\\d+)\\)");
 
         /// <summary>
         /// Source code location / line position where particular test resides.
