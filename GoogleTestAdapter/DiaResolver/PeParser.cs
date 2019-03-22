@@ -255,7 +255,8 @@ namespace GoogleTestAdapter.DiaResolver
                 var directoryEntry = (IMAGE_IMPORT_DESCRIPTOR*)NativeMethods.ImageDirectoryEntryToData(image.MappedAddress, 0, 1, &size);
                 if (directoryEntry == null)
                 {
-                    logger.LogError(Resources.ImageDirectoryEntryToData);
+                    // .net executables does not have native debug symbols.
+                    //logger.LogError(Resources.ImageDirectoryEntryToData);
                     return;
                 }
                 while (shouldContinue && directoryEntry->OriginalFirstThunk != 0u)
